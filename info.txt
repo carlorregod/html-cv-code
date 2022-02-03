@@ -1,0 +1,12 @@
+Para que funcione se debe instalar el paquete de postfix
+sudo apt install postfix 
+Se completa el formuilario..
+sudo nano /etc/postfix/main.cf
+Y alli se sustituye
+mydestination = $myhostname, your_domain, localhost.com, , localhost
+por
+mydestination = localhost.$mydomain, localhost, $myhostname
+Y se agrega
+masquerade_domains = your_main_domain
+Y se reinicia
+sudo systemctl restart postfix
