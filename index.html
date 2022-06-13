@@ -84,7 +84,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="person_img">
-                                <img src="img/member/Foto-CV.png">
+                                <img src="img/member/foto-cv2.png">
                                 <a class="download_btn" href="resources/CV_COD.pdf" target="_blank"><span>Descargar CV en PDF</span></a>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                                     </div>
                                     <h5>Laravel</h5>
                                     <div class="subprogress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress_parcent"><span class="counter">75</span>%</div>
                                         </div>
                                     </div>
@@ -963,13 +963,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 				const url="form.php"
 				const method="post"
-				const formulario = new FormData(document.querySelector('#form_c'))
-				/*
+				//const formulario = new FormData(document.querySelector('#form_c'))
+				
 				fetch(url,{
 					method: method,
-					body: formulario,
+					body: JSON.stringify(data),
 					headers:{
-						'Content-Type' : 'application/json',
+						'Content-Type' : 'application/json'
 					}
 				}).then(res=> res.json())
 				.then(resp=>{
@@ -984,7 +984,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					console.error("Error: "+error)
 					alert('Hubo un error, Favor reintentar nuevamente dentro de un rato...')
 				})
-				*/
+				/*
 				$.ajax({
 					type:method,
 					asynch: true,
@@ -1009,7 +1009,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					console.error("Error: "+error)
 					alert('Hubo un error, Favor reintentar nuevamente dentro de un rato.')
 				})
-				
+				*/
 			}
 			
 			

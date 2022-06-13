@@ -1,6 +1,9 @@
 <?php
 
-// To send HTML mail, the Content-type header must be set
+//Descomente si se usa fetch
+//header("Content-type: application/json; charset=utf-8");
+$_POST = json_decode(file_get_contents("php://input"), true);
+//HAsta acá solo si es fetch
 
 $headers = 'MIME-Version: 1.0'. "\r\n" ;
 $headers .= 'Content-type: text/html; charset=utf-8'. "\r\n" ;
